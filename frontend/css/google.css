@@ -32,5 +32,48 @@ input[type=search]:hover {
 
 body {
     margin-top: 10%;
-    margin-left: 30%;
+}
+
+li {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    list-style: none;
+    display: inline-block;
+}
+
+nav {
+    text-align: right;
+    padding-right: 160px;
+    word-spacing: 10px;
+}
+
+#userName {
+    opacity: .55;
+}
+
+a,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img,
+#searchBox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#googleSearch {
+    display: inline-block;
+    margin-left: 520px;
+    margin-right: auto;
+}
+
+#feelingLucky {
+    display: inline-block;
 }
