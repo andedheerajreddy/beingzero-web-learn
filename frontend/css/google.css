@@ -19,17 +19,6 @@ input[type=search]:hover {
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
-.fontuser {
-    position: relative;
-}
-
-.fontuser i {
-    position: absolute;
-    left: 515px;
-    top: 15px;
-    color: gray;
-}
-
 body {
     margin-top: 10%;
 }
@@ -70,10 +59,18 @@ img,
 
 #googleSearch {
     display: inline-block;
-    margin-left: 520px;
+    margin-left: 40%;
     margin-right: auto;
 }
 
 #feelingLucky {
     display: inline-block;
+}
+
+.fontuser i {
+    position: absolute;
+}
+
+.fontuser {
+    width: 100%;
 }
