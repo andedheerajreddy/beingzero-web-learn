@@ -1,4 +1,4 @@
-body {
+#add {
     margin-top: 10%;
 }
 
@@ -7,6 +7,10 @@ li {
     font-size: 13px;
     list-style: none;
     display: inline-block;
+}
+
+#dheerajimg {
+    border-radius: 50%;
 }
 
 a,
