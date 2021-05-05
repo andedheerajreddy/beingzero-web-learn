@@ -1,0 +1,12 @@
+.container {
+    background-color: white;
+}
+
+input[type="range"] {
+    width: 100%;
+    display: flex;
+}
+
+body {
+    background: wheat;
+}
