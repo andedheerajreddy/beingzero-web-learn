@@ -1,0 +1,33 @@
+.hhh {
+    background-color: rgb(29, 29, 31, 0.9) !important;
+}
+
+.hhh {
+    display: flex;
+    justify-content: center;
+}
+
+.hh {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa !important;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+}
+
+.ml-auto {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    background-color: rgb(29, 29, 31);
+}
