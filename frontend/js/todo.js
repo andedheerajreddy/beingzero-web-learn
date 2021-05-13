@@ -32,6 +32,7 @@ $('.todotext').on('keypress', function(e) {
                 isActive: true
             });
             localStorage.setItem("todo", JSON.stringify(todo));
+            $('.todotext').val("")
         }
         loaddata();
     }
