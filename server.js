@@ -24,6 +24,10 @@ app.get("/signup", (req, res) => {
     res.sendFile(__dirname + "/frontend/html/signup.html");
 })
 
+app.get("/todo", (req, res) => {
+    res.sendFile(__dirname + "/frontend/html/todo.html");
+})
+
 
 app.get("/charts", (req, res) => {
     res.sendFile(__dirname + "/frontend/html/chart.html");
