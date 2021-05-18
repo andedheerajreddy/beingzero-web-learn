@@ -8,7 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "dotenv": "^9.0.2",
+    "env": "0.0.2",
     "express": "^4.17.1",
+    "mongoose": "^5.12.9",
     "shortid": "^2.2.16"
   }
 }

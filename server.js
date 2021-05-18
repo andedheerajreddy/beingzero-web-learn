@@ -1,10 +1,18 @@
 const shortid = require("shortid");
 const express = require('express');
+
+const dbconnect = require("./backend/dbconnect");
+require('dotenv').config()
+
 const app = express();
+dbconnect.connect();
+
 app.use(express.static("frontend"));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+
 
 app.get("/", function(req, res) {
     res.send("Welcome to My Basic Site");
@@ -43,6 +51,10 @@ app.get("/charts", (req, res) => {
 
 app.get("/signin", (req, res) => {
     res.sendFile(__dirname + "/frontend/html/signin.html");
+})
+
+app.get("/courses", (req, res) => {
+    res.sendFile(__dirname + "/frontend/html/course.html");
 })
 
 
@@ -97,24 +109,10 @@ app.delete("/api/todos/:todoid", (req, res) => {
     })
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.use("/api", require("./backend/api/courses"));
 
 // Heroku will automatically set an environment variable called PORT
 const PORT = process.env.PORT || 3000;
-
 // Start the server
 app.listen(PORT, function() {
     console.log("Server Starting running on http://localhost:" + PORT);

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CRUD Operations</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Basic CRUD operations">
+    <meta name="keywords" content="CRUD operation in JS, CRUD operation in Jquery">
+    <meta name="author" content="Being Zero Pvt Ltd">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/course.css">
+
+    <style>
+        .hidden {
+            display: none;
+        }
+        
+        .result {
+            max-width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <button class="btn btn-sm btn-primary" id="add-test">Add Course</button>
+                <div class="clearfix"><br /></div>
+                <div class="card card-body">
+                    <!-- Form Wrapper & Button -->
+                    <div class="form-wrapper hidden" style="width: 61%;">
+                        <select class="form-control" id="test-name" style="margin: 10px;">
+                            <option selected value="">select course</option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="Php">Php</option>
+                        </select>
+                        <input class="form-control" placeholder=" Enter no of articles" type="number" id="test-result" style="margin: 10px;">
+                        <button class="btn btn-sm btn-info" id="create-test" style="margin: 10px;">Add</button>
+                    </div>
+                    <!-- Data Table -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Courses</th>
+                                <th scope="col">Articels</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tests-table"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="snackbar"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="/js/course.js"></script>
+</body>
+
+</html>
