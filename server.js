@@ -20,6 +20,9 @@ app.get("/", function(req, res) {
 app.get("/resume", (req, res) => {
     res.sendFile(__dirname + "/frontend/html/resume.html");
 })
+app.get("/tambola", (req, res) => {
+    res.sendFile(__dirname + "/frontend/html/tambola.html");
+})
 app.get("/google", (req, res) => {
     res.sendFile(__dirname + "/frontend/html/google.html");
 })
